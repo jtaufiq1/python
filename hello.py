@@ -1,3 +1,6 @@
 #!/bin/python
 
-print("Hello! Python");
+# Variables
+hello = "Hello! Python"
+
+print(hello);
