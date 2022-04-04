@@ -1,2 +1,3 @@
 # ignore test-venv directory
 test-venv
+__pycache__
