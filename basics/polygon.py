@@ -1,8 +1,9 @@
 #!/usr/local/bin/python3
-#
+import turtle
+# import _tkinter
+
 # Object Oriented Programming
 #+ with Python 3
-import turtle
 
 # Begin Class Def
 class Polygon:
@@ -18,7 +19,8 @@ class Polygon:
 
 
 ## __main__
+
 square = Polygon(4, "Square")
 pentagon = Polygon(5, "Pentagon")
 
-square.draw()
+pentagon.draw()
