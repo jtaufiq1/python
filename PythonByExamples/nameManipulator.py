@@ -12,7 +12,7 @@ flen = len(firstname)
 
 if flen < 5:
     surname = input("Enter surname: ")
-    fullName = (firstname + surname).upper()
+    fullName = f"{firstname} {surname}".upper()
     print(fullName)
 elif flen >= 5:
     print(firstname.lower())

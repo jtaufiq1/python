@@ -6,7 +6,7 @@
 firstname = input("Firstname: ")
 lastname = input("Lastname: ")
 
-fullName = firstname + " " + lastname
+fullName = f"{firstname} {lastname}"
 print()
 print("Full Name: ", fullName.title())
 print("Name Length: ", len(fullName))

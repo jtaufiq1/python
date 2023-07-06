@@ -9,25 +9,28 @@
 # When the number of bottles gets down to 0
 # + Display 'There are no more green bottles hanging on the wall'
 
-greenBottlesN = 10
-song = "There are [N] green bottles hanging on the wall, " + str(greenBottlesN) + " green bottles hanging on the wall, and if 1 green bottle should accidentally fall"
+remBottles = 10
+while remBottles > 0:
+    song = f'''SONG: 10 Green Bottles:
+    \tThere are {remBottles} green bottles hanging on the wall
+    \t{remBottles} green bottles hanging on the wall
+    \tAnd if 1 green bottle should accidentally fall
+    '''
+    question = "\tHow many green bottles will be hanging on the wall? "
 
-question = "How many green bottles will be hanging on the wall? "
-answerCorrect = "There will be " + str(greenBottlesN) + " green bottles hanging on the wall"
-answerWrong = "No, Try Again!"
-bottlesFinished = "There are no more green bottles hanging on the wall"
+    print(song)
+    ans = int(input(question))
+    remBottles = remBottles - 1
 
-print(song[:10], greenBottlesN)
-print(song[14:])
-#while greenBottlesN != 0:
-#    print(song)
-#    ans = int(input(question))
-#
-#    print("[DEBUG]", ans)
-#    if ans == (greenBottlesN-1):
-#        greenBottlesN = greenBottlesN - 1
-#        print(answerCorrect)
-#    else:
-#        print(answerWrong)
-#
-#print(bottlesFinished)
+    if ans == remBottles:
+       if remBottles != 0:
+            if remBottles == 1:
+                b = "bottle"
+            else:
+                b = "bottles"
+            print(f"\nThere will be {remBottles} green {b} hanging on the wall")
+       else:
+            print("\nThere are no more green bottles hanging on the wall")
+    else:
+       while ans != remBottles:
+           ans = int(input("No, try again: "))
