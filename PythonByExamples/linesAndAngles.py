@@ -14,7 +14,7 @@ def config(t, ps, ts="arrow", ht=False):
     t = turtle.Turtle()
     t.shape(ts)
     t.pensize(int(ps))
-    if ht == True:
+    if True:
         t.hideturtle()
 
     return t
