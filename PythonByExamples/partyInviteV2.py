@@ -15,7 +15,7 @@ message = ""
 while answer == "y":
     name = input("invite: ")
 
-    print("\t", name.title(), "has now been invited")
+    print(f"\t{name.title()} has now been invited")
     count = count + 1
 
     print("Do you want to invite anyone again?",end='')

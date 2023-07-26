@@ -4,7 +4,7 @@
 
 import random
 
-fruits = ['mango', 'orange', 'pineapple','apple','grape']
+fruits = ('mango','orange','pineapple','apple','grape')
 
 fruit = random.choice(fruits)
 print(fruit)
