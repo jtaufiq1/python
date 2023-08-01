@@ -4,7 +4,7 @@
 # Convert lowercase character to uppercase
 
 
-line = input("String: ").upper()
-
+line = input("String: ")
+if line.islower():
+    print(line.isupper())
 print(line)
-

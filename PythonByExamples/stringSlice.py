@@ -2,7 +2,8 @@
 
 # Get string from input
 # Display string length
-# Display string section: Get section start & section end
+# String Slice:
+#+ Display string section: Get section start & section end
 
 line = input("Nursery Rhyme: ")
 print("Line Length: ", len(line))
