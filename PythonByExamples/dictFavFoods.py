@@ -10,16 +10,21 @@
 # Display the dictionary
 
 fav_food = dict()
-food_list = ['rice','jollof','stew','yumi']
+food_list = ['ZT','rice','jollof','stew','yumi']
 
-for i in range(1,5):
-    fav_food[i] = food_list[i-1]
+key = 1
+for f in food_list:
+    fav_food[key] = f
+    key = key + 1
+del key
+
+print(f"Type: {type(fav_food)}, ID: {id(fav_food)}")
 print(f"Favorite foods: {fav_food}")
-
 #for k,v in fav_food.items():
 #    print(f"{v}: {k}")
 
 food = int(input("Remove food: "))
 del fav_food[food]
 
+sorted(fav_food)
 print(f"Favorite foods: {fav_food.values()}")
